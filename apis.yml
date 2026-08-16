@@ -1,17 +1,42 @@
 aid: francis-medical
 name: Francis Medical
-description: 'Francis Medical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Francis Medical is a privately held medical device company headquartered
+  in Maple Grove, Minnesota, founded in 2018 by Michael Hoey and named for his father,
+  who died of prostate cancer in 1991. It develops the Vanquish Water Vapor Ablation
+  System, a transurethral outpatient platform that ablates targeted prostate tissue
+  using the thermal energy stored in sterile water vapor delivered in short bursts
+  through a catheter, with the aim of treating localized disease while avoiding the
+  incontinence and sexual dysfunction associated with radical prostatectomy and radiation.
+  The company received FDA Breakthrough Device Designation in 2023 and 510(k) clearance
+  for prostate tissue ablation in December 2025, and it is running the VAPOR 1 and
+  VAPOR 2 clinical studies alongside a long-term registry; it has signalled intent
+  to extend the same water vapor platform to bladder and kidney cancer. Francis Medical
+  has raised roughly $160 million to date, including an $80 million Series C in January
+  2025 co-led by Solas BioVentures and Arboretum Ventures, with earlier participation
+  from Coloplast. It is led by president and CEO Mike Kujak. Francis Medical publishes
+  a physician locator, an electronic instructions-for-use (eIFU) library and a coordinated
+  vulnerability disclosure policy for its devices and embedded software, but operates
+  no public developer program, API documentation, or machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/francis-medical/refs/heads/main/apis.yml
+image: https://www.francismedical.com/wp-content/uploads/2025/08/Vanquish_Stacked_RGB-1.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: identity-enriched-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
 - Company
+- Health Care
+- Medical Devices
+- Oncology
+- Urology
+- Prostate Cancer
+- Surgery
+- Ablation
+- Clinical Trials
+- Minimally Invasive
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +44,79 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/francis-medical-domain-security.yml
 - type: Website
+  url: https://www.francismedical.com/
+- type: About
+  url: https://www.francismedical.com/about/
+- type: Blog
+  url: https://www.francismedical.com/news/
+- type: Support
+  url: https://www.francismedical.com/contact/
+- type: FAQ
+  url: https://www.francismedical.com/faq/
+- type: PrivacyPolicy
+  url: https://www.francismedical.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.francismedical.com/terms-and-conditions/
+- type: CookiePolicy
+  url: https://www.francismedical.com/cookie-policy/
+- type: Security
+  url: https://www.francismedical.com/product-security/
+- type: Careers
+  url: https://www.francismedical.com/careers/
+- type: Leadership
+  url: https://www.francismedical.com/leadership/
+- type: InstructionsForUse
+  url: https://www.francismedical.com/emanual/
+- type: Locator
+  url: https://www.francismedical.com/physician-locator/
+- type: Evidence
+  url: https://www.francismedical.com/evidence/
+- type: Reimbursement
+  url: https://www.francismedical.com/reimbursement/
+- type: SecondaryMarket
   url: https://www.nasdaqprivatemarket.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/francis-medical
+- type: Product
+  url: https://www.francismedical.com/vanquish/
+- type: VulnerabilityDisclosure
+  url: security/francis-medical-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/francis-medical-llms.txt
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Francis Medical's own Product Security page states that "our current product
+    offerings do not include network-connected components" — the Vanquish Water Vapor
+    Ablation System is a capital console and single-use catheter operated at the bedside,
+    so there is no developer portal, no api./developer./docs./portal. hostname in DNS,
+    and the only machine-readable JSON on the host is the marketing site's stock WordPress
+    core REST API at /wp-json/.
+  evidence:
+  - url: https://www.francismedical.com/product-security/
+    status: 200
+  - url: https://www.francismedical.com/openapi.json
+    status: 404
+  - url: https://www.francismedical.com/swagger.json
+    status: 404
+  - url: https://www.francismedical.com/graphql
+    status: 404
+  - url: https://www.francismedical.com/llms.txt
+    status: 404
+  - url: https://www.francismedical.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.francismedical.com/.well-known/agent.json
+    status: 404
+  - url: https://www.francismedical.com/.well-known/security.txt
+    status: 404
+  - url: https://www.francismedical.com/wp-json/
+    status: 200
+  checked: '2026-08-16'

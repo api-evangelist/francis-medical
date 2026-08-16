@@ -1,0 +1,45 @@
+generated: '2026-08-16'
+method: probed
+source: https://www.francismedical.com/
+host: www.francismedical.com
+summary: Every standard /.well-known/ path was probed on the only host Francis Medical
+  operates (www.francismedical.com; no api./developer./docs./portal. hostname resolves
+  in DNS). All returned 404 from the WordPress front controller. No well-known document
+  is served, so NO WellKnown or SecurityTxt pointer is emitted for this provider.
+paths:
+- path: /.well-known/security.txt
+  url: https://www.francismedical.com/.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  url: https://www.francismedical.com/.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  url: https://www.francismedical.com/.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  url: https://www.francismedical.com/.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  url: https://www.francismedical.com/.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /.well-known/agent-card.json
+  url: https://www.francismedical.com/.well-known/agent-card.json
+  status: 404
+  file: null
+- path: /.well-known/agent.json
+  url: https://www.francismedical.com/.well-known/agent.json
+  status: 404
+  file: null
+hits: 0
+notes:
+- The 404 bodies are the site's real "Not found" template (1,674 bytes), not a soft-200
+  SPA catch-all, so these are genuine absences rather than an ambiguous shell.
+- Francis Medical does publish a coordinated vulnerability disclosure policy, but at
+  a human page (/product-security/) rather than as an RFC 9116 security.txt. See
+  security/francis-medical-vulnerability-disclosure.yml.
+checked: '2026-08-16'
