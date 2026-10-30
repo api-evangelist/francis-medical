@@ -64,5 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Francis Medical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Francis Medical is a privately held medical device company headquartered in Maple Grove, Minnesota, founded in 2018 by Michael Hoey and named for his father, who died of prostate cancer in 1991. It develops the Vanquish Water Vapor Ablation System, a transurethral outpatient platform that ablates targeted prostate tissue using the thermal energy stored in sterile water vapor delivered in short bursts through a catheter, with the aim of treating localized disease while avoiding the incontinence and sexual dysfunction associated with radical prostatectomy and radiation. The company received FDA Breakthrough Device Designation in 2023 and 510(k) clearance for prostate tissue ablation in December 2025, and it is running the VAPOR 1 and VAPOR 2 clinical studies alongside a long-term registry; it has signalled intent to extend the same water vapor platform to bladder and kidney cancer. Francis Medical has raised roughly $160 million to date, including an $80 million Series C in January 2025 co-led by Solas BioVentures and Arboretum Ventures, with earlier participation from Coloplast. It is led by president and CEO Mike Kujak. Francis Medical publishes a physician locator, an electronic instructions-for-use (eIFU) library and a coordinated vulnerability disclosure policy for its devices and embedded software, but operates no public developer program, API documentation, or machine-readable API contract.
+
+**Areas:** Company · Healthcare · Medical Devices · Oncology · Urology · Prostate Cancer · Surgery · Ablation · Clinical Trials · Minimally Invasive
+
+## Francis Medical on APIs.io
+
+Everything profiled for Francis Medical is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/francis-medical/](https://apis.io/providers/francis-medical/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Francis Medical Domain Security](https://apis.io/security/francis-medical/francis-medical-domain-security/)
+- [Francis Medical Vulnerability Disclosure](https://apis.io/security/francis-medical/francis-medical-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.francismedical.com/)
+- [Support](https://www.francismedical.com/contact/)
+- [Blog](https://www.francismedical.com/news/)
+- [Security](https://www.francismedical.com/product-security/)
+- [Terms of service](https://www.francismedical.com/terms-and-conditions/)
+- [Privacy policy](https://www.francismedical.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 13.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/francis-medical/](https://apis.io/providers/francis-medical/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Francis Medical: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/francis-medical/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
